@@ -17,15 +17,22 @@
         }
     </style>
 </head>
-<p style="color:red;font-size:50px">I am big red</p>
-<h1>Test Element Selector</h1>
-<h2 id="para1">Test ID Selector</h2>
-<h2 class="nav">Test class Selector</h2>
-<p id="demo"></p>
-<script>document.getElementById("demo").innerHTML = window.Date()</script>
 
 <body>
-
+    <p style="color:red;font-size:50px">I am big red</p>
+    <h1>Test Element Selector</h1>
+    <h2 id="para1">Test ID Selector</h2>
+    <h2 class="nav">Test class Selector</h2>
+    <p id="demo"></p>
+    <script>document.getElementById("demo").innerHTML = window.Date()</script>
+    <script>
+        if (window.confirm("使用者是否需要協助")) {
+            console.log("使用者需要協助");
+        }
+        else {
+            console.log("使用者不需要協助");
+        }
+    </script>
 </body>
 
 </html>
