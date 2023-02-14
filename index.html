@@ -26,7 +26,8 @@
     <p id="demo"></p>
     <script>document.getElementById("demo").innerHTML = window.Date()</script>
     <script>
-        if (window.confirm("使用者是否需要協助")) {
+        var ans = window.prompt("使用者是否需要協助(yes/no)");
+        if (ans == "yes") {
             console.log("使用者需要協助");
         }
         else {
