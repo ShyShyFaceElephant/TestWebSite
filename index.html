@@ -24,15 +24,10 @@
     <h2 id="para1">Test ID Selector</h2>
     <h2 class="nav">Test class Selector</h2>
     <p id="demo"></p>
-    <script>document.getElementById("demo").innerHTML = window.Date()</script>
     <script>
-        var ans = window.prompt("使用者是否需要協助(yes/no)");
-        if (ans == "yes") {
-            console.log("使用者需要協助");
-        }
-        else {
-            console.log("使用者不需要協助");
-        }
+        var account = req.query.account;
+        //var password=req.query.password;
+        document.getElementById("demo").innerHTML = account;
     </script>
 </body>
 
