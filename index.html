@@ -27,7 +27,7 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         //var password=req.query.password;
-        document.getElementById("demo").innerHTML = params.get('account');
+        document.getElementById("demo").innerHTML = parseFunction(params.get('account'));
     </script>
 </body>
 
