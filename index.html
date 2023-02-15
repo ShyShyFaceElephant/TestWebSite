@@ -25,9 +25,9 @@
     <h2 class="nav">Test class Selector</h2>
     <p id="demo"></p>
     <script>
-        var account = req.query.account;
+        const params = new URLSearchParams(window.location.search);
         //var password=req.query.password;
-        document.getElementById("demo").innerHTML = account;
+        document.getElementById("demo").innerHTML = params.get('account');
     </script>
 </body>
 
